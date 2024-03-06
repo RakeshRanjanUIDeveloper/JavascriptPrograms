@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sum of two Numbers</title>
 </head>
 <body>
-    
+    <!--Approach one using + operator-->
+    <script>
+        let num1 = 10;
+        let num2 = 20;
+        let sum = num1 + num2;
+        console.log(sum);
+    </script>
+
+    <!--Approach two using function-->
+    <script>
+        function addition(num1, num2){
+            return num1 + num2
+        }
+        console.log(addition(1,2));
+    </script>
+
+
+    <!--Approach three using Arrow function-->
+    <script>
+        const addNum = (num1, num2) => num1 + num2;
+        console.log(addNum(2,3));
+    </script>
+
+    <!--Approach four using  Addition Assignment (+=) Operator-->
+    <script>
+        let number1 = 5;
+        let number2 = 6;
+        number1 += number2;
+        console.log(number1)
+    </script>
 </body>
 </html>
