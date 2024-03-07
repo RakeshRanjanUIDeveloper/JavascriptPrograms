@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function numberChecking(num){
+            switch(Math.sign(num)){
+                case 1:
+                        console.log("Given number is Positive");
+                        break;
+                case -1:
+                        console.log("Given number is Negative");
+                        break;
+                default:
+                        console.log("Given number is Zero");
+            }
+        }
+        numberChecking(-10);
+    </script>
+    <script>
+        function checkNumberSign(){
+            const input = prompt("enter the number");
+            const number = Number(input);
+            if(isNaN(number)){
+                console.log("Invalid input!! please enter valid input")
+            }else{
+                const result =
+                    number === 0 ? "Number is zero" :
+                    number > 0 ? `${number} is positive` : `${number} is negative`;
+                console.log(result)
+            }
+        }
+        checkNumberSign()
+
+    </script>
+</body>
+</html>
